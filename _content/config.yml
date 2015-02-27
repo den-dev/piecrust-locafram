@@ -1,0 +1,10 @@
+site:
+    title: 'My New Website'
+    description: 'A website recently generated with PieCrust.'
+    author: dendev
+    pretty_urls: false
+smartypants:
+    enable: true
+baker:
+    skip_patterns:
+        - vendor/*
