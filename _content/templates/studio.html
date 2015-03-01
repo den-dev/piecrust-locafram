@@ -1,0 +1,31 @@
+{% include 'header.html' %}
+
+<!-- nav -->
+{% include 'nav.html' %}
+
+
+<div class="wrapper">
+    <div class='container'>
+        <div class='row'>
+          {{ content|raw }}
+        </div>
+        <div class='row'>
+            <!-- gallery studio -->
+            <div class='container hide-for-medium-up'>
+                <ul class="example-orbit" data-orbit data-options="animation:fade;pause_on_hover:false;animation_speed:500;navigation_arrows:false;bullets:true;timer_speed:2500;" >
+                        {% for image_url in assets %}
+                        <li><img src='{{ site.base_url ~ image_url }}' alt='photo studio {{loop.index}}'></li>
+                        {% endfor %} 
+                    </ul> 
+            </div>
+            <ul class="small-block-grid-3 clearing-thumbs hide-for-small-only" data-clearing>
+                   {% for image_url in assets %}
+                   <li><img src='{{ site.base_url ~ image_url }}' alt='photo studio {{loop.index}}'></li>
+                   {% endfor %} 
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+{% include 'footer.html' %}

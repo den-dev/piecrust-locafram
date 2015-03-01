@@ -3,8 +3,11 @@ site:
     description: 'A website recently generated with PieCrust.'
     author: dendev
     pretty_urls: false
+    base_url: http://127.0.0.1/~dendev/Vrac/piecrust/LocaFram/
 smartypants:
     enable: true
 baker:
     skip_patterns:
         - vendor/*
+locafram:
+    description: 'chat chaton'

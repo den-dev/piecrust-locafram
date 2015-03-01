@@ -1,1 +1,1 @@
-{"layout":"default","format":"markdown","template_engine":"twig","content_type":"html","title":"Untitled Page","blog":"blog","segments":["content"]}
+{"layout":"index","format":"markdown","template_engine":"twig","content_type":"html","title":"Untitled Page","blog":"blog","segments":["content","img1","img2","img3","img4","img5","img6"]}
