@@ -1,0 +1,79 @@
+{% include 'header.html' %}
+
+<!-- nav -->
+{% include 'nav.html' %}
+
+
+<div class="wrapper">
+    <div class='container'>
+        <div class='row'>
+            <h2 class='green'>{{ 'Contactez nous'|upper }}</h2>
+            <hr>
+            <div class='panel'>
+                {{ content|raw }}
+            </div>
+        </div>
+
+        <!-- form contact -->
+        <div class='row'>
+            <form name='form_contact' id='form_contact' action='{{ form_contact|raw }}' method='GET'>
+                <div class='row'>
+                    <!-- corps -->
+                    <fieldset>
+                        <legend class='green'>Mail</legend>
+                        <div class='row'>
+                            <div class='concerne'>
+                                <label>
+                                    Concerne*
+                                    <div id="form_concerne">   
+                                        <select>
+                                            <option value='infos'>Demande d'informations</option>
+                                            <option value='visite'>Rendez vous pour une visite</option>
+                                        </select>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>	
+                        <div class='row'>
+                            <label>
+                                Votre Message*
+                                <textarea name='texte_contact' id='texte_contact' placeholder="" rows='6' required class='messageMail'></textarea>
+                            </label>
+                        </div>
+                        <div class='large-4 columns'>
+                            <div class='mail'>
+                                <label>
+                                    Votre Mail*
+                                    <input name='mail_contact' id='mail_contact' type="email" placeholder="adresse mail">
+                                </label>
+                            </div><!-- /mail -->
+                        </div><!--/large -->
+                        <div class='large-4 columns'>
+                            <div class='nom'>
+                                <label>
+                                    Votre Nom
+                                    <input name='nom_contact' id='nom_contact' type="text" placeholder="Nom" required pattern="[a-zA-Z]+"> 
+                                </label>
+                            </div>
+                        </div>
+                        <div class='large-4 columns'>
+                            <div class='gsm'>
+                                <label>
+                                    Votre Tel/Gsm
+                                    <input name='tel_contact' id='tel_contact' type="text" placeholder="votre numéro si vous désirez être rappelé"> 
+                                </label>
+                            </div>
+                        </div>
+                    </div> <!-- row nom mail tel -->
+                </fieldset>
+                <ul class="button-group round right">
+                    <li><input type='reset' value='Annuler' class='button'></li>
+                    <li><input type='submit' value='Envoyer' class='button'></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+{% include 'footer.html' %}

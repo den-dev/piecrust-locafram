@@ -1,1 +1,1 @@
-{"parts":[{"content":"![my picture]( {{ site.base_url ~ '\/images\/cour.jpg' }} )\n\n","format":null}]}
+{"parts":[{"content":"![my picture]( {{ pcurl( root ~ 'images\/cour.jpg' ) }} )\n\n","format":null}]}

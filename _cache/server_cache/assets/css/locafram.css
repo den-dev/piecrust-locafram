@@ -388,8 +388,7 @@ ul.contact li a:before
 	color: #FFF;
 }
 
-#menu li:hover a, #menu li.active a, #menu li.active span
-{
+#menu li:hover a, #menu li.active a, #menu li.active span {
 	background: #912D56;
 	border-radius: 50%;
 }
@@ -399,7 +398,10 @@ ul.contact li a:before
 	color: #FFF;
 }
 
-
+#logo h1 a.active
+{
+	color: #912D56;
+}
 /*********************************************************************************/
 /* Banner                                                                        */
 /*********************************************************************************/
