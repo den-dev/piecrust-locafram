@@ -7,14 +7,14 @@
 <div class="wrapper">
     <div class='container'>
         <div class='row'>
-            <h2 class='green'>{{ 'Contactez nous'|upper }}</h2>
+            <h2 id='begin' class='green'>{{ 'Contactez nous'|upper }}</h2>
             <hr>
             <div class='panel'>
                 {{ content|raw }}
             </div>
         </div>
 
-        <!-- form contact -->
+        <!--form contact -->
         <div class='row'>
             <form name='form_contact' id='form_contact' action='{{ form_contact|raw }}' method='GET'>
                 <div class='row'>

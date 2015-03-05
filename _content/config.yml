@@ -1,6 +1,7 @@
 site:
-    title: 'My New Website'
-    description: 'A website recently generated with PieCrust.'
+    title: 'LocaFram'
+    description: "Actuellement à louer sur Frameries/La Bouverie, un beau studio spacieux, semi-équipe et bénéficiant d'une très bonne localisation. Idéal pour personne âgé ou jeune couple sans enfant. Endroit calme et proche de toutes les commodités."
+    footer: "&copy; <a href='http://agiweb.be/'>Agiweb</a>. All rights reserved. | Coded with <a href='http://bolt80.com/piecrust/'>Piecrust</a> & <a href='http://foundation.zurb.com/'>Zurb</a> & <a href='http://www.vim.org/'>Vim</a>."
     author: dendev
     pretty_urls: false
 smartypants:

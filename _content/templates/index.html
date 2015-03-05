@@ -3,80 +3,34 @@
 <!-- nav -->
 {% include 'nav.html' %}
 
-    <!-- content -->
-    <div class="wrapper">
-        <div class="container">
-            <div class='row'>
-                <ul id='three-column' class="small-block-grid-3">
-                    <li>
-                        <div><span class="arrow-down"></span></div>
-                        <div id="tbox1">
-                            <div class="title">
-                                <h2>Maecenas luctus</h2>
-                            </div>
-                            <p>Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Duis pretium velit ac suscipit mauris. Proin eu wisi suscipit nulla suscipit interdum.</p>
-                            <a href="#" class="button">Learn More</a> 
-                        </div>
-                    </li>
-                    <li>
-                        <div id="tbox2">
-                            <div class="title">
-                                <h2>Integer gravida</h2>
-                            </div>
-                            <p>Proin eu wisi suscipit nulla suscipit interdum. Nullam non wisi a sem semper suscipit eleifend. Donec mattis libero eget urna. Duis  velit ac mauris.</p>
-                            <a href="#" class="button">Learn More</a> 
-                        </div>
-                    </li>
-                    <li>
-                        <div id="tbox3">
-                            <div class="title">
-                                <h2>Praesent mauris</h2>
-                            </div>
-                            <p>Donec mattis libero eget urna. Duis pretium velit ac mauris. Proin eu wisi suscipit nulla suscipit interdum. Nullam non wisi a sem suscipit  eleifend.</p>
-                            <a href="#" class="button">Learn More</a> 
-                        </div>
-                    </li>
-                </div>
+<div class="wrapper">
+    <div class='container'>
+        <!-- content -->
+        <div id='begin' class='row'>
+            <div class='small-12 large-6 columns'>
+              {{ content1|raw }}
             </div>
-
-            <!-- portfolio small || large -->
-            <div class='row'>
-                <div id="portfolio" class="container hide-for-medium-up">
-                    <ul class="example-orbit" data-orbit data-options="animation:fade;pause_on_hover:false;animation_speed:500;navigation_arrows:false;bullets:true;timer_speed:2500;" >
-                        <li>
-                        {{ img1 | raw }}
-                        </li>
-                        <li class="active">
-                        {{ img2 | raw }}
-                        </li>
-                        <li>
-                        {{ img3 | raw }}
-                        </li>
-                        <li>
-                        {{ img4 | raw }}
-                        </li>
-                        <li>
-                        {{ img5 | raw }}
-                        </li>
-                        <li>
-                        {{ img6| raw }}
-                        </li>
-                    </ul> 
-                </div>
-                <div id="portfolio" class="container hide-for-small-only">
-                    <ul class="large-block-grid-3 clearing-thumbs clearing-feature" data-clearing>
-                        <li class="clearing-featured-img">{{ img1 | raw }}</li>
-                        <li class="clearing-featured-img">{{ img2 | raw }}</li>
-                        <li class="clearing-featured-img">{{ img3 | raw }}</li>
-                        <li>{{ img4 | raw }}</li>
-                        <li>{{ img5 | raw }}</li>
-                        <li>{{ img6 | raw }}</li>
-                    </ul>
-                </div>
+            <div class='small-12 large-6 columns'>
+              {{ content2|raw }}
             </div>
         </div>
+        <!-- gallery studio -->
+        <div class='row'>
+            <div class='container show-for-medium-up'>
+                <ul class="example-orbit" data-orbit data-options="animation:fade;pause_on_hover:false;animation_speed:500;navigation_arrows:false;bullets:true;timer_speed:2500;" >
+                        {% for image_url in assets %}
+                        <li><img src="{{ pcurl( root ~ image_url | trim( '/' ) ) }}" alt='photo studio {{loop.index}}'></li>
+                        {% endfor %} 
+                    </ul> 
+            </div>
+            <ul class="small-block-grid-3 clearing-thumbs show-for-large-up" data-clearing>
+                   {% for image_url in assets %}
+                   <li><img src="{{ pcurl( root  ~ image_url | trim('/') )  }}" alt='photo studio {{loop.index}}'></li>
+                   {% endfor %} 
+            </ul>
+        </div>
     </div>
+</div>
 
-
-    <!-- footer -->
-    {% include 'footer.html' %}
+<!-- footer -->
+{% include 'footer.html' %}

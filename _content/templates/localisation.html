@@ -6,15 +6,18 @@
 
 <div class="wrapper">
     <div class='container'>
-        <div class='row'>
+        <!-- map -->
+        <div id='begin' class='row'>
             <div id="localisation"></div>
         </div>
-        <div class='row'>
-            <ul class="small-block-grid-3">
-                <li><!-- Your content goes here --></li>
-                <li><!-- Your content goes here --></li>
-                <li><!-- Your content goes here --></li>
-            </ul>
+        <!-- content -->
+        <div id='content' class='row'>
+            <div class='small-12 large-6 columns'>
+                {{ content1 | raw }}
+            </div>
+            <div class='small-12 large-6 columns'>
+                {{ content2 | raw }}
+            </div>
         </div>
     </div>
 </div>

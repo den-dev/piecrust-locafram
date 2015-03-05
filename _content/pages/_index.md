@@ -1,21 +1,25 @@
 ---
-layout: index 
+layout: index
 ---
 
----img1---
-![my picture]( {{ pcurl( root ~ 'images/cour.jpg' ) }} )
+---content1---
 
----img2---
-![my picture]( {{ pcurl( root ~ 'images/living.jpg' ) }} )
+* Bel appartement de 50 m2  
 
----img3---
-![my picture]( {{ pcurl( root ~ 'images/sdb.jpg' ) }} )
+* Une grande chambre avec possiblité de faire coin salon  
 
----img4---
-![my picture]( {{ pcurl( root ~ 'images/wc.jpg' ) }} )
+* Une cuisine semi équipée avec meuble de cuisine mureaux et une armoire   
 
----img5---
-![my picture]( {{ pcurl( root ~ 'images/living2.jpg' ) }} )
+* Une salle de bain, douche, toilette, evier, mirroire   
 
----img6---
-![my picture]( {{ pcurl( root ~ 'images/chambre.jpg' ) }} )
+* Buanderie avec place pour étagere et machine à laver   
+
+---content2---
+
+* Situé au rue de chaussée, facilité d'accès. 
+
+* Nombreux espaces de rangement, entièrement carreler, facilité de nettoyage. 
+
+* Aux normes sécurité incendies, détecteur dans le studio et les commun, porte coupe feux.  
+
+* 3 Chauffages au gaz, ampoule économique, faible facture Electrabel.
