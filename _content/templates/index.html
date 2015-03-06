@@ -16,14 +16,16 @@
         </div>
         <!-- gallery studio -->
         <div class='row'>
-            <div class='container show-for-medium-up'>
-                <ul class="example-orbit" data-orbit data-options="animation:fade;pause_on_hover:false;animation_speed:500;navigation_arrows:false;bullets:true;timer_speed:2500;" >
+            <div class='small-10 small-centered large-10 large-centered columns'>
+                <div class='container hide-for-large-up'>
+                    <ul class="example-orbit" data-orbit data-options="animation:fade;pause_on_hover:false;animation_speed:500;navigation_arrows:false;bullets:true;timer_speed:2500;" >
                         {% for image_url in assets %}
                         <li><img src="{{ pcurl( root ~ image_url | trim( '/' ) ) }}" alt='photo studio {{loop.index}}'></li>
                         {% endfor %} 
                     </ul> 
+                </div>
             </div>
-            <ul class="small-block-grid-3 clearing-thumbs show-for-large-up" data-clearing>
+            <ul class="small-block-grid-3 large-block-grid-3 clearing-thumbs show-for-large-up" data-clearing>
                    {% for image_url in assets %}
                    <li><img src="{{ pcurl( root  ~ image_url | trim('/') )  }}" alt='photo studio {{loop.index}}'></li>
                    {% endfor %} 
